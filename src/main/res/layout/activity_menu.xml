@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="16dp"
+    android:background="@drawable/login">
+
+<Button
+android:id="@+id/viewAssignmentsButton"
+android:layout_width="250dp"
+    android:layout_height="30dp"
+    android:text="View Assignments"
+    android:layout_weight="1"
+    android:layout_marginTop="20dp"
+    android:layout_marginBottom="10dp"/>
+
+    <Button
+        android:id="@+id/makeSubmissionButton"
+        android:layout_width="250dp"
+        android:layout_height="30dp"
+        android:text="Make a Submission"
+        android:layout_weight="1"
+        android:layout_marginBottom="10dp"/>
+
+    <Button
+    android:id="@+id/viewFeedbacksButton"
+    android:layout_width="250dp"
+    android:layout_height="30dp"
+    android:text="View Feedbacks"
+    android:layout_weight="1"
+    android:layout_marginBottom="10dp"/>
+
+    <Button
+    android:id="@+id/viewSubmissionsButton"
+    android:layout_width="250dp"
+    android:layout_height="30dp"
+    android:text="View Submissions"
+    android:layout_weight="1"
+    android:layout_marginBottom="10dp"/>
+
+    <Button
+    android:id="@+id/logoutButton"
+    android:layout_width="250dp"
+    android:layout_height="30dp"
+    android:text="Logout"
+    android:layout_weight="1"
+    android:layout_marginBottom="10dp"/>
+
+    </LinearLayout>

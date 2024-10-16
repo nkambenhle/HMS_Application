@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "173956511279",
+    "project_id": "hms-app-7a862",
+    "storage_bucket": "hms-app-7a862.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:173956511279:android:820e3910244d57c48238da",
+        "android_client_info": {
+          "package_name": "com.example.hms"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA4W6vxNcMQm7xdrREcaKaSeZMzXKelwF8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

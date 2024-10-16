@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">HMS</string>
+    <string name="record_button_text">Record</string>
+</resources>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".MakeSubmissionActivity"
+    android:background="@drawable/login">
+
+    <TextView
+        android:id="@+id/titleFeedback"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit your Video"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"/>
+
+    <!-- Assignment ID EditText -->
+    <EditText
+        android:id="@+id/editTextAssignmentId"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Assignment ID"
+        app:layout_constraintTop_toBottomOf="@id/titleFeedback"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"
+        android:padding="12dp"
+        android:background="@drawable/backcolor" />
+
+    <!-- User ID EditText (Automatically set by code) -->
+    <EditText
+        android:id="@+id/editTextUserId"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="User ID"
+        app:layout_constraintTop_toBottomOf="@id/editTextAssignmentId"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp"
+        android:padding="12dp"
+        android:focusable="false"
+        android:clickable="false"
+        android:background="@drawable/backcolor" />
+
+
+
+    <!-- VideoView for displaying recorded video -->
+    <VideoView
+        android:id="@+id/videoView"
+        android:layout_width="0dp"
+        android:layout_height="150dp"
+        app:layout_constraintTop_toBottomOf="@id/editTextUserId"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp" />
+
+    <!-- Record Video Button -->
+    <Button
+        android:id="@+id/buttonRecordVideo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Record Video"
+        app:layout_constraintTop_toBottomOf="@id/videoView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="@color/colorPrimary"
+        android:textColor="@android:color/white"/>
+
+    <!-- Upload Video Button -->
+    <Button
+        android:id="@+id/buttonUploadVideo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Upload Video"
+        app:layout_constraintTop_toBottomOf="@id/buttonRecordVideo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="@color/colorPrimary"
+        android:textColor="@android:color/white"/>
+
+    <!-- Back Button -->
+    <Button
+        android:id="@+id/buttonBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Back"
+        app:layout_constraintTop_toBottomOf="@id/buttonUploadVideo"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="16dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
